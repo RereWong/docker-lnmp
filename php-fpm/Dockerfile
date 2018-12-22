@@ -9,6 +9,8 @@ MAINTAINER rere <748691045@qq.com>
 # You can install php extensions using docker-php-ext-install
 ######
 
+RUN curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+
 RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
